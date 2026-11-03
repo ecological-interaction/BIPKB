@@ -103,6 +103,24 @@ class DocumentaryPreservationTests(unittest.TestCase):
     def test_reconstruction_not_called_original(self):
         self.assertIn('NOT the original',(ROOT/'assets/diagrams/bipkb_conceptual_reconstruction.mmd').read_text())
         self.assertIn('not the original conversation diagram',(ROOT/'README.md').read_text())
+    def test_nested_diagram_rejects_outside_child(self):
+        path=ROOT/'assets/diagrams/bipkb_federation.mmd'
+        original=Path.read_text
+        def read(p,*a,**kw):
+            text=original(p,*a,**kw)
+            return text.replace('@box T1 75 ', '@box T1 5 ') if p==path else text
+        with patch.object(Path,'read_text',read):
+            with self.assertRaisesRegex(ValueError,'Nested item outside parent'):
+                v.renderer.diagram(path)
+    def test_nested_diagram_rejects_unclosed_group(self):
+        path=ROOT/'assets/diagrams/bipkb_federation.mmd'
+        original=Path.read_text
+        def read(p,*a,**kw):
+            text=original(p,*a,**kw)
+            return text.replace('    end\n    TITLE --> CONTENT', '    TITLE --> CONTENT', 1) if p==path else text
+        with patch.object(Path,'read_text',read):
+            with self.assertRaisesRegex(ValueError,'Unclosed Mermaid subgraph'):
+                v.renderer.diagram(path)
     def test_ambiguous_json_keys_rejected(self):
         class Input:
             def read_text(self,**kw):return '{"a":1,"a":2}'

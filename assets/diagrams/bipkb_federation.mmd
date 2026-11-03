@@ -1,29 +1,94 @@
-%% Authoritative Mermaid source; @box hints support the deterministic local renderer.
-%% @canvas 1200 790
-%% @title BIPKB — conceptual federation boundaries
-%% @description Proposed documentary relationships, not implemented adapters, exclusive ownership or approved semantic mappings. A1 S010–S016 and L008–L012; EIRKB boundary review added in A2 section 3.
-%% @box BIPKB 40 20 1120 100 heading
-%% @box CORPUS 40 170 1120 110 knowledge
-%% @box SOURCES 40 320 1120 110 sources
-%% @box DRM 40 470 1120 110 method
-%% @box IRKB 40 620 1120 110 heading
+%% Authoritative V2 source; canonical OSDS four-layer annotated Mermaid convention.
+%% Reproduce with the existing BIPKB/scripts/render_bipkb.py diagram() function.
+%% AMRKB command (from its root; BIPKB checkout alongside):
+%% BIPKB command: python3 -B scripts/render_bipkb.py
+%% @canvas 1200 930
+%% @title BIPKB — research content, methodology and emerging uses
+%% @description Selected existing territory proposals, biological characteristics and responses, and qualified interpretation remain distinct; no accepted taxonomy, new observations or causal certification. EII owns indicator definitions, OSDS observation systems and GISDS geographic sources. Developing DRM preserves independent authority; emerging applications are not implemented software.
+%% @box TITLE 40 20 1120 100 heading
+%% @text TITLE 30,22,19 30,58,84 600,400,400
+%% @group CONTENT 40 148 1120 450 sources
+%% @text CONTENT 27 35 600
+%% @group TERRITORIES 60 208 530 350 classification
+%% @text TERRITORIES 22,17 30,54 600,400
+%% @box T1 75 280 245 68 card
+%% @text T1 20 40 400
+%% @box T2 330 280 245 68 card
+%% @text T2 20,20 27,52 400,400
+%% @box T3 75 364 245 68 card
+%% @text T3 20 40 400
+%% @box T4 330 364 245 68 card
+%% @text T4 20 40 400
+%% @box T5 75 448 245 68 card
+%% @text T5 20,20 27,52 400,400
+%% @box T6 330 448 245 68 card
+%% @text T6 20 40 400
+%% @group CHARACTERISTICS 610 208 530 160 classification
+%% @text CHARACTERISTICS 22 32 600
+%% @box BIOVALUES 625 254 500 98 card
+%% @text BIOVALUES 20,20,18 25,52,78 400,400,400
+%% @group INTERPRETATION 610 388 530 170 classification
+%% @text INTERPRETATION 22 32 600
+%% @box INFERVALUES 625 434 500 108 card
+%% @text INFERVALUES 19,18,18 25,54,83 400,400,400
+%% @box DRM 40 626 1120 100 federation
+%% @text DRM 28,20,18 31,60,84 600,400,400
+%% @group APPLICATIONS 40 754 1120 150 application
+%% @text APPLICATIONS 27,18 32,58 600,400
+%% @box USE1 60 828 255 60 applicationcard
+%% @text USE1 21,17 25,48 600,400
+%% @box USE2 335 828 255 60 applicationcard
+%% @text USE2 21,17 25,48 600,400
+%% @box USE3 610 828 255 60 applicationcard
+%% @text USE3 21,17 25,48 600,400
+%% @box USE4 885 828 255 60 applicationcard
+%% @text USE4 21,17 25,48 600,400
 flowchart TB
-    BIPKB["BIPKB — Bioindicators and Phenotypes Knowledge Base<br/>Provisional research project · Documentary candidates"]
-    CORPUS["Organisms, phenotypes, traits and bioindication<br/>Research leads and qualified interpretation · Not verified observations<br/>Related knowledge bases: AMRKB · EIRKB — boundary review pending"]
-    SOURCES["Autonomous scientific and geographic source catalogues<br/>EII indicators · OSDS observation systems · GISDS spatial sources"]
-    DRM["DRM — developing methodological reference<br/>Identity · Evidence and rights · Classifications · Qualified relationships<br/>MSP 0.1.0 revision 2 remains an unadopted candidate"]
-    IRKB["IRKB — independently authored synthesis<br/>Interpretations retain evidence, uncertainty and situated authority<br/>No operational integration or scientific approval implied"]
-    BIPKB -.->|documents| CORPUS
-    CORPUS -.->|may reference| SOURCES
-    SOURCES -.->|boundary review only| DRM
-    DRM -.->|methodological safeguards for| IRKB
-    classDef heading fill:#cce3f9,stroke:#173b6b;
-    classDef knowledge fill:#e1f0e6,stroke:#41744d;
-    classDef sources fill:#feeec9,stroke:#a16a16;
-    classDef method fill:#e1daf0,stroke:#574087;
-    classDef output fill:#eaedf1,stroke:#7c8c9d;
-    class BIPKB heading;
-    class CORPUS knowledge;
-    class SOURCES sources;
-    class DRM method;
-    class IRKB heading;
+    TITLE["BIPKB<br/>Bioindicators and Phenotypes Knowledge Base<br/>Biological characteristics, responses and qualified ecological interpretation"]
+    subgraph CONTENT["Research content — candidate concepts and proposed navigation"]
+        subgraph TERRITORIES["Selected research territories<br/>Navigation proposals, not a complete taxonomy"]
+            T1["Organismal biology"]
+            T2["Phenotype and<br/>phenomics"]
+            T3["Functional ecology"]
+            T4["Bioindication"]
+            T5["Environmental<br/>responses"]
+            T6["Ecological history"]
+        end
+        subgraph CHARACTERISTICS["Biological characteristics and responses"]
+            BIOVALUES["Observable phenotypes · Functional traits<br/>Phenotypic plasticity · Organismal responses<br/>Genetic, developmental and environmental context"]
+        end
+        subgraph INTERPRETATION["Qualified ecological interpretation"]
+            INFERVALUES["Indicator species · Environmental associations<br/>Calibration · Confounders · Timescale · Uncertainty<br/>Biological evidence is not a unique diagnosis"]
+        end
+    end
+    DRM["DRM (developing) Database Reference Methodology<br/>Shared identities · Classifications and mappings · Relationships · Provenance<br/>Candidate methodology · Scientific authority remains with each database"]
+    subgraph APPLICATIONS["Analysis, Intelligence and Applications<br/>Emerging research uses — not implemented analytical software"]
+        USE1["Phenotype<br/>comparison"]
+        USE2["Bioindicator<br/>interpretation"]
+        USE3["Ecological response<br/>analysis"]
+        USE4["Environmental<br/>assessment"]
+    end
+    TITLE --> CONTENT
+    CONTENT <--> DRM
+    DRM <--> APPLICATIONS
+    classDef heading fill:#cce3f9,stroke:#173b6b,color:#15243d;
+    classDef knowledge fill:#e1f0e6,stroke:#41744d,color:#203d29;
+    classDef method fill:#e1daf0,stroke:#574087,color:#29223e;
+    classDef sources fill:#feeec9,stroke:#a16a16,color:#543a13;
+    classDef card fill:#fef6e3,stroke:#a16a16,color:#302b20;
+    classDef output fill:#eaedf1,stroke:#7c8c9d,color:#25334a;
+    classDef neutral fill:#f8f9fa,stroke:#99a4b0,color:#3a4656;
+    classDef federation fill:#e1daf0,stroke:#574087,stroke-width:2,color:#29223e,font-weight:600,font-size:28;
+    classDef application fill:#eaedf1,stroke:#7c8c9d,stroke-width:2,color:#25334a,font-weight:600,font-size:27;
+    classDef applicationcard fill:#f5f6f8,stroke:#9ba8b6,stroke-width:1.2,color:#25334a;
+    classDef developing stroke-dasharray:6 4;
+    classDef classification fill:#fef6e3,stroke:#a16a16,color:#302b20;
+
+    class TITLE heading;
+    class CONTENT sources;
+    class TERRITORIES,CHARACTERISTICS,INTERPRETATION classification;
+    class T1,T2,T3,T4,T5,T6,BIOVALUES,INFERVALUES card;
+    class DRM federation;
+    class APPLICATIONS application;
+    class USE1,USE2,USE3,USE4 applicationcard;
+    class DRM developing;

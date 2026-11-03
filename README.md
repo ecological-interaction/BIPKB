@@ -2,9 +2,9 @@
 
 BIPKB is a provisional research knowledge base for bioindicators, observable phenotypes, functional traits, plasticity, organismal responses and qualified ecological interpretation.
 
-![BIPKB documentary research and proposed federation boundaries; autonomous catalogues, developing DRM safeguards and independent IRKB synthesis, not implemented integrations](assets/diagrams/bipkb_federation.svg)
+![BIPKB four-layer overview: database identity; nested proposed research territories, biological characteristics and qualified interpretation; developing DRM; and emerging applications](assets/diagrams/bipkb_federation.svg)
 
-[View full-size federation diagram](assets/diagrams/bipkb_federation.svg). Connections express provisional research responsibilities, not exclusive subject ownership, approved semantic mappings or operational adapters.
+[View full-size introductory diagram](assets/diagrams/bipkb_federation.svg). Selected territories are navigation proposals, not a complete or adopted taxonomy. Biological evidence and ecological interpretation remain distinct. DRM preserves independent authority; downstream uses are emerging research directions, not implemented software. EII indicator definitions, OSDS observation systems and GISDS geographic sources retain their own responsibilities.
 
 **Corpus revision:** 0.2.0 · Work in progress · Local documentary intake for review, not a research release.
 

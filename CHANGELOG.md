@@ -4,6 +4,13 @@ This log follows Keep a Changelog conventions. No research release has been issu
 
 ## [Unreleased]
 
+### Introductory diagram integration — 2026-11-03
+
+- Integrated the reviewed four-layer first diagram with nested proposed research content, developing DRM and emerging analysis/intelligence/applications; retained editable Mermaid, publication SVG, deterministic rendering and diagram regression checks.
+- Preserved the second conceptual reconstruction byte-for-byte and left its README reference unchanged; no regeneration, relocation or scientific-content changes.
+- Preserved corpus/document, schema and protocol versions. This diagram/documentation revision assigns no research release, scientific approval or DRM conformance.
+- Temporary coordinated previews, diagnostics and prior review baselines are held in Development; essential source files, validators and tests remain in Git. No website or publication-pin changes.
+
 ### Documentary intake — 2026-11-03 (corpus/document revision 0.2.0)
 
 - Preserved all 293 complete A1 rows, nineteen origin families, section caveats and substantive unindexed material; linked A2 dispositions without using its abbreviated excerpts as complete extraction.

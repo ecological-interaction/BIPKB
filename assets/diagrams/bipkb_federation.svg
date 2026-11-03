@@ -1,31 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="790" viewBox="0 0 1200 790" role="img" aria-labelledby="title desc">
-<title id="title">BIPKB — conceptual federation boundaries</title><desc id="desc">Proposed documentary relationships, not implemented adapters, exclusive ownership or approved semantic mappings. A1 S010–S016 and L008–L012; EIRKB boundary review added in A2 section 3.</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#65758b"/></marker></defs>
-<rect width="100%" height="100%" fill="white"/>
-<path d="M600,120 L600,170" stroke="#65758b" fill="none" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
-<text x="600" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#36445b">documents</text>
-<path d="M600,280 L600,320" stroke="#65758b" fill="none" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
-<text x="600" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#36445b">may reference</text>
-<path d="M600,430 L600,470" stroke="#65758b" fill="none" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
-<text x="600" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#36445b">boundary review only</text>
-<path d="M600,580 L600,620" stroke="#65758b" fill="none" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
-<text x="600" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#36445b">methodological safeguards for</text>
-<rect x="40" y="20" width="1120" height="100" rx="10" fill="#cce3f9" stroke="#173b6b" stroke-width="2"/>
-<text x="600" y="56" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#25334a">BIPKB — Bioindicators and Phenotypes Knowledge Base</text>
-<text x="600" y="84" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#25334a">Provisional research project · Documentary candidates</text>
-<rect x="40" y="170" width="1120" height="110" rx="10" fill="#e1f0e6" stroke="#41744d" stroke-width="2"/>
-<text x="600" y="197" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#25334a">Organisms, phenotypes, traits and bioindication</text>
-<text x="600" y="225" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#25334a">Research leads and qualified interpretation · Not verified observations</text>
-<text x="600" y="253" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#25334a">Related knowledge bases: AMRKB · EIRKB — boundary review pending</text>
-<rect x="40" y="320" width="1120" height="110" rx="10" fill="#feeec9" stroke="#a16a16" stroke-width="2"/>
-<text x="600" y="361" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#25334a">Autonomous scientific and geographic source catalogues</text>
-<text x="600" y="389" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#25334a">EII indicators · OSDS observation systems · GISDS spatial sources</text>
-<rect x="40" y="470" width="1120" height="110" rx="10" fill="#e1daf0" stroke="#574087" stroke-width="2"/>
-<text x="600" y="497" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#25334a">DRM — developing methodological reference</text>
-<text x="600" y="525" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#25334a">Identity · Evidence and rights · Classifications · Qualified relationships</text>
-<text x="600" y="553" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#25334a">MSP 0.1.0 revision 2 remains an unadopted candidate</text>
-<rect x="40" y="620" width="1120" height="110" rx="10" fill="#cce3f9" stroke="#173b6b" stroke-width="2"/>
-<text x="600" y="647" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#25334a">IRKB — independently authored synthesis</text>
-<text x="600" y="675" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#25334a">Interpretations retain evidence, uncertainty and situated authority</text>
-<text x="600" y="703" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#25334a">No operational integration or scientific approval implied</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="930" viewBox="0 0 1200 930" role="img" aria-labelledby="title desc">
+<title id="title">BIPKB — research content, methodology and emerging uses</title><desc id="desc">Selected existing territory proposals, biological characteristics and responses, and qualified interpretation remain distinct; no accepted taxonomy, new observations or causal certification. EII owns indicator definitions, OSDS observation systems and GISDS geographic sources. Developing DRM preserves independent authority; emerging applications are not implemented software.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#637286"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+<path d="M600 124 L600 143" fill="none" stroke="#637286" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M600 602 L600 621" fill="none" stroke="#637286" stroke-width="1.6" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M600 730 L600 749" fill="none" stroke="#637286" stroke-width="1.6" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<rect id="box-TITLE" x="40" y="20" width="1120" height="100" rx="14" fill="#cce3f9" stroke="#173b6b" stroke-width="1.5"/>
+<text data-box="TITLE" x="600" y="50" font-size="30" font-weight="600" fill="#15243d">BIPKB</text>
+<text data-box="TITLE" x="600" y="78" font-size="22" font-weight="400" fill="#15243d">Bioindicators and Phenotypes Knowledge Base</text>
+<text data-box="TITLE" x="600" y="104" font-size="19" font-weight="400" fill="#15243d">Biological characteristics, responses and qualified ecological interpretation</text>
+<rect id="box-CONTENT" x="40" y="148" width="1120" height="450" rx="14" fill="#feeec9" stroke="#a16a16" stroke-width="1.5"/>
+<text data-box="CONTENT" x="600" y="183" font-size="27" font-weight="600" fill="#543a13">Research content — candidate concepts and proposed navigation</text>
+<rect id="box-TERRITORIES" x="60" y="208" width="530" height="350" rx="14" fill="#fef6e3" stroke="#a16a16" stroke-width="1.5"/>
+<text data-box="TERRITORIES" x="325" y="238" font-size="22" font-weight="600" fill="#302b20">Selected research territories</text>
+<text data-box="TERRITORIES" x="325" y="262" font-size="17" font-weight="400" fill="#302b20">Navigation proposals, not a complete taxonomy</text>
+<rect id="box-T1" x="75" y="280" width="245" height="68" rx="14" fill="#fef6e3" stroke="#a16a16" stroke-width="1.5"/>
+<text data-box="T1" x="197.5" y="320" font-size="20" font-weight="400" fill="#302b20">Organismal biology</text>
+<rect id="box-T2" x="330" y="280" width="245" height="68" rx="14" fill="#fef6e3" stroke="#a16a16" stroke-width="1.5"/>
+<text data-box="T2" x="452.5" y="307" font-size="20" font-weight="400" fill="#302b20">Phenotype and</text>
+<text data-box="T2" x="452.5" y="332" font-size="20" font-weight="400" fill="#302b20">phenomics</text>
+<rect id="box-T3" x="75" y="364" width="245" height="68" rx="14" fill="#fef6e3" stroke="#a16a16" stroke-width="1.5"/>
+<text data-box="T3" x="197.5" y="404" font-size="20" font-weight="400" fill="#302b20">Functional ecology</text>
+<rect id="box-T4" x="330" y="364" width="245" height="68" rx="14" fill="#fef6e3" stroke="#a16a16" stroke-width="1.5"/>
+<text data-box="T4" x="452.5" y="404" font-size="20" font-weight="400" fill="#302b20">Bioindication</text>
+<rect id="box-T5" x="75" y="448" width="245" height="68" rx="14" fill="#fef6e3" stroke="#a16a16" stroke-width="1.5"/>
+<text data-box="T5" x="197.5" y="475" font-size="20" font-weight="400" fill="#302b20">Environmental</text>
+<text data-box="T5" x="197.5" y="500" font-size="20" font-weight="400" fill="#302b20">responses</text>
+<rect id="box-T6" x="330" y="448" width="245" height="68" rx="14" fill="#fef6e3" stroke="#a16a16" stroke-width="1.5"/>
+<text data-box="T6" x="452.5" y="488" font-size="20" font-weight="400" fill="#302b20">Ecological history</text>
+<rect id="box-CHARACTERISTICS" x="610" y="208" width="530" height="160" rx="14" fill="#fef6e3" stroke="#a16a16" stroke-width="1.5"/>
+<text data-box="CHARACTERISTICS" x="875" y="240" font-size="22" font-weight="600" fill="#302b20">Biological characteristics and responses</text>
+<rect id="box-BIOVALUES" x="625" y="254" width="500" height="98" rx="14" fill="#fef6e3" stroke="#a16a16" stroke-width="1.5"/>
+<text data-box="BIOVALUES" x="875" y="279" font-size="20" font-weight="400" fill="#302b20">Observable phenotypes · Functional traits</text>
+<text data-box="BIOVALUES" x="875" y="306" font-size="20" font-weight="400" fill="#302b20">Phenotypic plasticity · Organismal responses</text>
+<text data-box="BIOVALUES" x="875" y="332" font-size="18" font-weight="400" fill="#302b20">Genetic, developmental and environmental context</text>
+<rect id="box-INTERPRETATION" x="610" y="388" width="530" height="170" rx="14" fill="#fef6e3" stroke="#a16a16" stroke-width="1.5"/>
+<text data-box="INTERPRETATION" x="875" y="420" font-size="22" font-weight="600" fill="#302b20">Qualified ecological interpretation</text>
+<rect id="box-INFERVALUES" x="625" y="434" width="500" height="108" rx="14" fill="#fef6e3" stroke="#a16a16" stroke-width="1.5"/>
+<text data-box="INFERVALUES" x="875" y="459" font-size="19" font-weight="400" fill="#302b20">Indicator species · Environmental associations</text>
+<text data-box="INFERVALUES" x="875" y="488" font-size="18" font-weight="400" fill="#302b20">Calibration · Confounders · Timescale · Uncertainty</text>
+<text data-box="INFERVALUES" x="875" y="517" font-size="18" font-weight="400" fill="#302b20">Biological evidence is not a unique diagnosis</text>
+<rect id="box-DRM" x="40" y="626" width="1120" height="100" rx="14" fill="#e1daf0" stroke="#574087" stroke-width="2" stroke-dasharray="6 4"/>
+<text data-box="DRM" x="600" y="657" font-size="28" font-weight="600" fill="#29223e">DRM (developing) Database Reference Methodology</text>
+<text data-box="DRM" x="600" y="686" font-size="20" font-weight="400" fill="#29223e">Shared identities · Classifications and mappings · Relationships · Provenance</text>
+<text data-box="DRM" x="600" y="710" font-size="18" font-weight="400" fill="#29223e">Candidate methodology · Scientific authority remains with each database</text>
+<rect id="box-APPLICATIONS" x="40" y="754" width="1120" height="150" rx="14" fill="#eaedf1" stroke="#7c8c9d" stroke-width="2"/>
+<text data-box="APPLICATIONS" x="600" y="786" font-size="27" font-weight="600" fill="#25334a">Analysis, Intelligence and Applications</text>
+<text data-box="APPLICATIONS" x="600" y="812" font-size="18" font-weight="400" fill="#25334a">Emerging research uses — not implemented analytical software</text>
+<rect id="box-USE1" x="60" y="828" width="255" height="60" rx="14" fill="#f5f6f8" stroke="#9ba8b6" stroke-width="1.2"/>
+<text data-box="USE1" x="187.5" y="853" font-size="21" font-weight="600" fill="#25334a">Phenotype</text>
+<text data-box="USE1" x="187.5" y="876" font-size="17" font-weight="400" fill="#25334a">comparison</text>
+<rect id="box-USE2" x="335" y="828" width="255" height="60" rx="14" fill="#f5f6f8" stroke="#9ba8b6" stroke-width="1.2"/>
+<text data-box="USE2" x="462.5" y="853" font-size="21" font-weight="600" fill="#25334a">Bioindicator</text>
+<text data-box="USE2" x="462.5" y="876" font-size="17" font-weight="400" fill="#25334a">interpretation</text>
+<rect id="box-USE3" x="610" y="828" width="255" height="60" rx="14" fill="#f5f6f8" stroke="#9ba8b6" stroke-width="1.2"/>
+<text data-box="USE3" x="737.5" y="853" font-size="21" font-weight="600" fill="#25334a">Ecological response</text>
+<text data-box="USE3" x="737.5" y="876" font-size="17" font-weight="400" fill="#25334a">analysis</text>
+<rect id="box-USE4" x="885" y="828" width="255" height="60" rx="14" fill="#f5f6f8" stroke="#9ba8b6" stroke-width="1.2"/>
+<text data-box="USE4" x="1012.5" y="853" font-size="21" font-weight="600" fill="#25334a">Environmental</text>
+<text data-box="USE4" x="1012.5" y="876" font-size="17" font-weight="400" fill="#25334a">assessment</text>
+</g></svg>

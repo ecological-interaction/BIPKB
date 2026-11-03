@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If referring to this developing research resource, acknowledge its author and documentary-candidate status."
+title: "BIPKB — Bioindicators and Phenotypes Knowledge Base"
+type: dataset
+authors:
+  - family-names: Minchin
+    given-names: Jonathan
+    affiliation: Ecological Interaction
+    orcid: "https://orcid.org/0000-0001-8152-1796"
+abstract: "Work in Progress — Academic Research Resource. Provisional documentary inventory preserving 293 origin entries and independent correction proposals, corpus revision 0.2.0; science and rights unverified, no research release or reuse licence assigned."

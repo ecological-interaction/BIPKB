@@ -1,0 +1,24 @@
+%% Evidence-based reconstruction, NOT the original unrecovered conversation diagram.
+%% @canvas 1200 650
+%% @title BIPKB — evidence-based conceptual reconstruction
+%% @description Reconstructed from A1 C001–C025, E001–E015 and L001–L007. Candidate interpretation only; traits and occurrence do not uniquely diagnose causes.
+%% @box EVIDENCE 40 20 1120 110 knowledge
+%% @box CONTEXT 40 190 1120 110 sources
+%% @box INTERPRETATION 40 360 1120 110 heading
+%% @box CAUTION 40 530 1120 110 output
+flowchart TB
+    EVIDENCE["Organismal evidence and concepts<br/>Taxon occurrence · Phenotype observations · Functional traits<br/>A1 C001–C008, C011–C018 · L001–L005"]
+    CONTEXT["Context, timescale and biological history<br/>Genetics · Development · Environment · Biological archives<br/>A1 C019–C025 · E013–E015 · L002–L007"]
+    INTERPRETATION["Candidate ecological interpretation<br/>Indicator inference · Environmental change · Regional signatures<br/>A1 L001–L007: may support, reflect or inform — not equivalence"]
+    CAUTION["Evidence and inference safeguards<br/>Calibration · Sampling · Confounders · Dating and uncertainty<br/>Hypothetical examples are not empirical observations"]
+    EVIDENCE -.->|requires contextual assessment| CONTEXT
+    CONTEXT -.->|may inform, subject to evidence| INTERPRETATION
+    INTERPRETATION -.->|requires| CAUTION
+    classDef heading fill:#cce3f9,stroke:#173b6b;
+    classDef knowledge fill:#e1f0e6,stroke:#41744d;
+    classDef sources fill:#feeec9,stroke:#a16a16;
+    classDef output fill:#eaedf1,stroke:#7c8c9d;
+    class EVIDENCE knowledge;
+    class CONTEXT sources;
+    class INTERPRETATION heading;
+    class CAUTION output;

@@ -1,0 +1,22 @@
+# Operating-system metadata
+.DS_Store
+._*
+Thumbs.db
+# Python caches
+__pycache__/
+*.py[cod]
+# Local environments and configuration
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+# Operational database files
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+*.db
+*.db-journal
+*.db-wal
+*.db-shm

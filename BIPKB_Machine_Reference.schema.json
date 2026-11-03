@@ -1,0 +1,3508 @@
+{
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "project": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provisional_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scope": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "research_record_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "document_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "structured_record_authority": {
+          "type": "string",
+          "minLength": 1
+        },
+        "human_presentation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "methodology": {
+          "type": "string",
+          "minLength": 1
+        },
+        "author": {
+          "type": "string",
+          "minLength": 1
+        },
+        "organisation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "orcid": {
+          "type": "string",
+          "minLength": 1
+        },
+        "drm_conformance": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identifier_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "protocol_edition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "corpus_revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "release_status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "origin_row_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "additional_chat_record_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "collection_counts": {
+          "type": "object",
+          "properties": {
+            "records": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "references": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "classifications": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "memberships": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "relationships": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "examples": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "methodological_notes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "research_queue": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "assertions": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "records",
+            "references",
+            "classifications",
+            "memberships",
+            "relationships",
+            "examples",
+            "methodological_notes",
+            "research_queue",
+            "assertions"
+          ],
+          "additionalProperties": false
+        },
+        "origin_family_counts": {
+          "type": "object",
+          "properties": {
+            "D": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "N": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "S": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "G": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "C": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "E": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "T": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "R": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "I": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "O": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "H": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "B": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "U": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "K": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "X": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "F": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "L": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "Q": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "Z": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "D",
+            "N",
+            "S",
+            "G",
+            "C",
+            "E",
+            "T",
+            "R",
+            "I",
+            "O",
+            "H",
+            "B",
+            "U",
+            "K",
+            "X",
+            "F",
+            "L",
+            "Q",
+            "Z"
+          ],
+          "additionalProperties": false
+        },
+        "additional_recovered_evidence_units": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "project",
+        "provisional_name",
+        "scope",
+        "status",
+        "research_record_count",
+        "document_version",
+        "schema_version",
+        "structured_record_authority",
+        "human_presentation",
+        "methodology",
+        "author",
+        "organisation",
+        "orcid",
+        "drm_conformance",
+        "identifier_policy",
+        "protocol_edition",
+        "corpus_revision",
+        "release_status",
+        "origin_row_count",
+        "additional_chat_record_count",
+        "collection_counts",
+        "origin_family_counts",
+        "additional_recovered_evidence_units"
+      ],
+      "additionalProperties": false
+    },
+    "source_editions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "file": {
+            "type": "string",
+            "minLength": 1
+          },
+          "edition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "minLength": 1
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "evidence_status": {
+            "type": "string",
+            "minLength": 1
+          },
+          "coverage": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "file",
+          "edition",
+          "sha256",
+          "bytes",
+          "evidence_status",
+          "coverage"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "unindexed_material": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "start_line": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "end_line": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "disposition": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "source",
+          "start_line",
+          "end_line",
+          "text",
+          "disposition"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "identity_review": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "origins": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "minLength": 1
+          },
+          "basis": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "origins",
+          "claim",
+          "status",
+          "basis"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "recovery_limits": {
+      "type": "object",
+      "properties": {
+        "original_transcript": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conversation_thread_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accessible_turns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "truncated_assistant_responses": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "original_conceptual_map": {
+          "type": "string",
+          "minLength": 1
+        },
+        "additional_chat_intake": {
+          "type": "string",
+          "minLength": 1
+        },
+        "drm_basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "data_observations": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rights": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "original_transcript",
+        "conversation_thread_id",
+        "accessible_turns",
+        "truncated_assistant_responses",
+        "original_conceptual_map",
+        "additional_chat_intake",
+        "drm_basis",
+        "data_observations",
+        "rights"
+      ],
+      "additionalProperties": false
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "scientific_concept_lead"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Term": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Working meaning in conversation": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Important distinction / question": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Status": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Term",
+                  "Working meaning in conversation",
+                  "Important distinction / question",
+                  "Status"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "resource_or_programme_lead"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Resource": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "URL transcribed": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Contribution stated": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Access / rights state": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Origin": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Resource",
+                  "URL transcribed",
+                  "Contribution stated",
+                  "Access / rights state",
+                  "Origin"
+                ],
+                "additionalProperties": false
+              },
+              "external_identity": {
+                "type": "object",
+                "properties": {
+                  "state": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "state",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "external_identity"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "indicator_system_family"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "System / family": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Biological basis": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Need for Stage A/0 verification": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "System / family",
+                  "Biological basis",
+                  "Need for Stage A/0 verification"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "standard_ontology_or_service_lead"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Standard / resource": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "URL transcribed": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Candidate application": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Steward / origin caution": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Status": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Standard / resource",
+                  "URL transcribed",
+                  "Candidate application",
+                  "Steward / origin caution",
+                  "Status"
+                ],
+                "additionalProperties": false
+              },
+              "external_identity": {
+                "type": "object",
+                "properties": {
+                  "state": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "state",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "external_identity"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "standards_organisation_lead"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Standard / resource": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "URL transcribed": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Candidate application": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Steward / origin caution": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Status": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Standard / resource",
+                  "URL transcribed",
+                  "Candidate application",
+                  "Steward / origin caution",
+                  "Status"
+                ],
+                "additionalProperties": false
+              },
+              "external_identity": {
+                "type": "object",
+                "properties": {
+                  "state": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "state",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "external_identity"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "ontology_discovery_service_lead"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Standard / resource": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "URL transcribed": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Candidate application": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Steward / origin caution": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Status": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Standard / resource",
+                  "URL transcribed",
+                  "Candidate application",
+                  "Steward / origin caution",
+                  "Status"
+                ],
+                "additionalProperties": false
+              },
+              "external_identity": {
+                "type": "object",
+                "properties": {
+                  "state": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "state",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "external_identity"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "principles_lead"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Standard / resource": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "URL transcribed": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Candidate application": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Steward / origin caution": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Status": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Standard / resource",
+                  "URL transcribed",
+                  "Candidate application",
+                  "Steward / origin caution",
+                  "Status"
+                ],
+                "additionalProperties": false
+              },
+              "external_identity": {
+                "type": "object",
+                "properties": {
+                  "state": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "state",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "external_identity"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "historical_person_mention"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Period": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Person / tradition": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Contribution suggested in conversation": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Verification status": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Period",
+                  "Person / tradition",
+                  "Contribution suggested in conversation",
+                  "Verification status"
+                ],
+                "additionalProperties": false
+              },
+              "external_identity": {
+                "type": "object",
+                "properties": {
+                  "state": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "state",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "external_identity"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "institutional_lead"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Organisation": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "URL transcribed": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Research connection described": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Verification": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Organisation",
+                  "URL transcribed",
+                  "Research connection described",
+                  "Verification"
+                ],
+                "additionalProperties": false
+              },
+              "external_identity": {
+                "type": "object",
+                "properties": {
+                  "state": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "state",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "external_identity"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "community_lead"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Network": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "URL transcribed": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Candidate contribution": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Verification": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Network",
+                  "URL transcribed",
+                  "Candidate contribution",
+                  "Verification"
+                ],
+                "additionalProperties": false
+              },
+              "external_identity": {
+                "type": "object",
+                "properties": {
+                  "state": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "state",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "external_identity"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "discovery_reference_or_software_lead"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "URL transcribed": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Category": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Intended use / caution": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Name",
+                  "URL transcribed",
+                  "Category",
+                  "Intended use / caution"
+                ],
+                "additionalProperties": false
+              },
+              "external_identity": {
+                "type": "object",
+                "properties": {
+                  "state": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "state",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "external_identity"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "minItems": 0
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "bibliographic_lead"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Author(s)": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Title (as cited in conversation)": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Year given": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Research contribution": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Bibliographic verification": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Author(s)",
+                  "Title (as cited in conversation)",
+                  "Year given",
+                  "Research contribution",
+                  "Bibliographic verification"
+                ],
+                "additionalProperties": false
+              },
+              "external_identity": {
+                "type": "object",
+                "properties": {
+                  "state": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "state",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "external_identity"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "minItems": 0
+    },
+    "classifications": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "proposed_navigation_territory"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Territory / subtopic": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Research orientation": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Stage links": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Territory / subtopic",
+                  "Research orientation",
+                  "Stage links"
+                ],
+                "additionalProperties": false
+              },
+              "owner": {
+                "type": "string",
+                "minLength": 1
+              },
+              "version": {
+                "type": "string",
+                "minLength": 1
+              },
+              "adoption": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "owner",
+              "version",
+              "adoption"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "proposed_classification_dimension"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Dimension": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Candidate values / rules": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Stewardship and risk": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Dimension",
+                  "Candidate values / rules",
+                  "Stewardship and risk"
+                ],
+                "additionalProperties": false
+              },
+              "owner": {
+                "type": "string",
+                "minLength": 1
+              },
+              "version": {
+                "type": "string",
+                "minLength": 1
+              },
+              "adoption": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "owner",
+              "version",
+              "adoption"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "minItems": 0
+    },
+    "memberships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "record": {
+            "type": "string",
+            "minLength": 1
+          },
+          "classification": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "minLength": 1
+          },
+          "provenance": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "record",
+          "classification",
+          "status",
+          "provenance"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 0
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "relationship_proposal"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Subject": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Relation": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Object": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Status / warning": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Subject",
+                  "Relation",
+                  "Object",
+                  "Status / warning"
+                ],
+                "additionalProperties": false
+              },
+              "subject": {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "kind",
+                  "label",
+                  "reason"
+                ],
+                "additionalProperties": false
+              },
+              "predicate": {
+                "type": "string",
+                "minLength": 1
+              },
+              "object": {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "kind",
+                  "label",
+                  "reason"
+                ],
+                "additionalProperties": false
+              },
+              "qualification": {
+                "type": "string",
+                "minLength": 1
+              },
+              "relationship_review": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "subject",
+              "predicate",
+              "object",
+              "qualification",
+              "relationship_review"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "minItems": 0
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "hypothetical_example"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Biological observation/example": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Possible ecological interpretation in chat": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Required caveat": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Biological observation/example",
+                  "Possible ecological interpretation in chat",
+                  "Required caveat"
+                ],
+                "additionalProperties": false
+              },
+              "empirical_status": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "empirical_status"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "minItems": 0
+    },
+    "methodological_notes": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "reported_decision_or_development"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Locator": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Kind": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Decision / development": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Status": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Limits": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Locator",
+                  "Kind",
+                  "Decision / development",
+                  "Status",
+                  "Limits"
+                ],
+                "additionalProperties": false
+              },
+              "reported_authority": {
+                "type": "string",
+                "minLength": 1
+              },
+              "authority_evidence": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "reported_authority",
+              "authority_evidence"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "naming_history"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Acronym": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Expanded name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Conversation assessment": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Decision": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Acronym",
+                  "Expanded name",
+                  "Conversation assessment",
+                  "Decision"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "scope_or_boundary_proposal"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Area": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Proposed inclusion / rule": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Evidence origin": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Verification": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Area",
+                  "Proposed inclusion / rule",
+                  "Evidence origin",
+                  "Verification"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "research_stage_history"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Stage": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Scope": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "State at A1": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Gate before advancing": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Stage",
+                  "Scope",
+                  "State at A1",
+                  "Gate before advancing"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "minItems": 0
+    },
+    "research_queue": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "verification_task"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Claim as it appeared in the conversation": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Reason to verify": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Preferred evidence": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Claim as it appeared in the conversation",
+                  "Reason to verify",
+                  "Preferred evidence"
+                ],
+                "additionalProperties": false
+              },
+              "queue_state": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "queue_state"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "coverage_gap"
+              },
+              "provenance": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "fields": {
+                "type": "object",
+                "properties": {
+                  "Gap": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Proposed research action": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "Priority": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "Gap",
+                  "Proposed research action",
+                  "Priority"
+                ],
+                "additionalProperties": false
+              },
+              "queue_state": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "kind",
+              "provenance",
+              "status",
+              "fields",
+              "queue_state"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "minItems": 0
+    },
+    "assertions": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1,
+                "const": "correction-proposal"
+              },
+              "origin_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "targets": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "source": {
+                "type": "string",
+                "minLength": 1
+              },
+              "line": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "raw_line": {
+                "type": "string",
+                "minLength": 1
+              },
+              "correction_type": {
+                "type": "string",
+                "minLength": 1
+              },
+              "assertion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence_origin": {
+                "type": "string",
+                "minLength": 1
+              },
+              "verification_limit": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "type": "object",
+                "properties": {
+                  "documentary_inclusion": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "proposal_review": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "canonical_source_lifecycle": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "scientific_verification": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "access": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reuse_rights": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "documentary_inclusion",
+                  "proposal_review",
+                  "canonical_source_lifecycle",
+                  "scientific_verification",
+                  "access",
+                  "reuse_rights"
+                ],
+                "additionalProperties": false
+              },
+              "evidence_strength": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "kind",
+              "origin_ids",
+              "targets",
+              "source",
+              "line",
+              "raw_line",
+              "correction_type",
+              "assertion",
+              "evidence_origin",
+              "verification_limit",
+              "status",
+              "evidence_strength"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      },
+      "minItems": 0
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "origin_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "line": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "section": {
+            "type": "string",
+            "minLength": 1
+          },
+          "table": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "headers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          },
+          "raw_line": {
+            "type": "string",
+            "minLength": 1
+          },
+          "inherited_context": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          },
+          "target": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target_collection": {
+            "type": "string",
+            "minLength": 1
+          },
+          "transformation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "a2": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "string",
+                "minLength": 1
+              },
+              "line": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "headers": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0
+              },
+              "raw_line": {
+                "type": "string",
+                "minLength": 1
+              },
+              "recommended_type": {
+                "type": "string",
+                "minLength": 1
+              },
+              "recommended_disposition": {
+                "type": "string",
+                "minLength": 1
+              },
+              "limits": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "source",
+              "line",
+              "headers",
+              "raw_line",
+              "recommended_type",
+              "recommended_disposition",
+              "limits"
+            ],
+            "additionalProperties": false
+          },
+          "decision_status": {
+            "type": "string",
+            "minLength": 1
+          },
+          "deferred_reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "origin_id",
+          "source",
+          "line",
+          "section",
+          "table",
+          "headers",
+          "raw_line",
+          "inherited_context",
+          "target",
+          "target_collection",
+          "transformation",
+          "a2",
+          "decision_status",
+          "deferred_reason"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 293,
+      "maxItems": 293
+    },
+    "supplementary_material": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "thread_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "turn_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "message_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "speaker": {
+            "type": "string",
+            "minLength": 1
+          },
+          "turn_started_utc": {
+            "type": "string",
+            "minLength": 1
+          },
+          "recovered_date": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fragment_sha256": {
+            "type": "string",
+            "minLength": 1
+          },
+          "retrieved_character_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "retrieved_line_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "truncation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "origin_links": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additional_content_examples": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "documentary_disposition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_strength": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "object",
+            "properties": {
+              "documentary_inclusion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "proposal_review": {
+                "type": "string",
+                "minLength": 1
+              },
+              "canonical_source_lifecycle": {
+                "type": "string",
+                "minLength": 1
+              },
+              "scientific_verification": {
+                "type": "string",
+                "minLength": 1
+              },
+              "access": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reuse_rights": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "documentary_inclusion",
+              "proposal_review",
+              "canonical_source_lifecycle",
+              "scientific_verification",
+              "access",
+              "reuse_rights"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "thread_id",
+          "turn_id",
+          "message_id",
+          "speaker",
+          "turn_started_utc",
+          "recovered_date",
+          "fragment_sha256",
+          "retrieved_character_count",
+          "retrieved_line_count",
+          "truncation",
+          "text",
+          "origin_links",
+          "additional_content_examples",
+          "documentary_disposition",
+          "evidence_strength",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "metadata",
+    "source_editions",
+    "unindexed_material",
+    "identity_review",
+    "recovery_limits",
+    "supplementary_material"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BIPKB documentary intake schema 0.2.0",
+  "description": "Local closed documentary serialization; not a universal ontology, MSP contract or scientific approval."
+}

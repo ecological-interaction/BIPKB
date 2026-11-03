@@ -1,0 +1,29 @@
+%% Authoritative Mermaid source; @box hints support the deterministic local renderer.
+%% @canvas 1200 790
+%% @title BIPKB — conceptual federation boundaries
+%% @description Proposed documentary relationships, not implemented adapters, exclusive ownership or approved semantic mappings. A1 S010–S016 and L008–L012; EIRKB boundary review added in A2 section 3.
+%% @box BIPKB 40 20 1120 100 heading
+%% @box CORPUS 40 170 1120 110 knowledge
+%% @box SOURCES 40 320 1120 110 sources
+%% @box DRM 40 470 1120 110 method
+%% @box IRKB 40 620 1120 110 heading
+flowchart TB
+    BIPKB["BIPKB — Bioindicators and Phenotypes Knowledge Base<br/>Provisional research project · Documentary candidates"]
+    CORPUS["Organisms, phenotypes, traits and bioindication<br/>Research leads and qualified interpretation · Not verified observations<br/>Related knowledge bases: AMRKB · EIRKB — boundary review pending"]
+    SOURCES["Autonomous scientific and geographic source catalogues<br/>EII indicators · OSDS observation systems · GISDS spatial sources"]
+    DRM["DRM — developing methodological reference<br/>Identity · Evidence and rights · Classifications · Qualified relationships<br/>MSP 0.1.0 revision 2 remains an unadopted candidate"]
+    IRKB["IRKB — independently authored synthesis<br/>Interpretations retain evidence, uncertainty and situated authority<br/>No operational integration or scientific approval implied"]
+    BIPKB -.->|documents| CORPUS
+    CORPUS -.->|may reference| SOURCES
+    SOURCES -.->|boundary review only| DRM
+    DRM -.->|methodological safeguards for| IRKB
+    classDef heading fill:#cce3f9,stroke:#173b6b;
+    classDef knowledge fill:#e1f0e6,stroke:#41744d;
+    classDef sources fill:#feeec9,stroke:#a16a16;
+    classDef method fill:#e1daf0,stroke:#574087;
+    classDef output fill:#eaedf1,stroke:#7c8c9d;
+    class BIPKB heading;
+    class CORPUS knowledge;
+    class SOURCES sources;
+    class DRM method;
+    class IRKB heading;
